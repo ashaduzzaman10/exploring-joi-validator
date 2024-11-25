@@ -1,7 +1,5 @@
 const userModel = require("../models/userModel");
 const bcrypt = require("bcrypt");
-const Joi = require( "joi" );
-
 
 const userLogIn = async (req, res) => {
 	const { email, password } = req.body;
